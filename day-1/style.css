@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@500&display=swap");
+
+:root {
+  --body-background-color: #f3f8fe;
+  --article-background-color: #fff;
+  --font-color: #1c2b62;
+}
+
+body,
+h1,
+h2,
+p,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-background-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--font-color);
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.component {
+  background-color: var(--article-background-color);
+  max-width: 562px;
+  max-height: 607px;
+  padding: 50px;
+
+  border-radius: 25px;
+}
+
+.component_flex {
+  display: flex;
+  gap: 16px;
+}
+
+.component__content {
+  /* flex: 1 0 0; */
+  width: 332px;
+}
+
+.component__avatar {
+  background-image: url(./img/avatar.png);
+  background-repeat: no-repeat;
+  width: 114px;
+  aspect-ratio: 1;
+}
+
+.component__creditoionals {
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+
+.component__stats {
+  font-size: 16px;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+
+  margin-bottom: 32px;
+}
+
+.component__stats > span {
+  padding-left: 36px;
+  white-space: nowrap;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.component__stats > span:nth-child(1) {
+  background-image: url(./img/icons/star.svg);
+  background-repeat: no-repeat;
+}
+
+.component__stats > span:nth-child(2) {
+  background-image: url(./img/icons/people.svg);
+  background-repeat: no-repeat;
+}
+
+.component__stats > span:nth-child(3) {
+  background-image: url(./img/icons/medal.svg);
+  background-repeat: no-repeat;
+}
+
+.component__descriprion {
+  margin-bottom: 32px;
+}
+
+.btn {
+  border: 2px solid #c4cadf;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  color: var(--font-color);
+  transition: all ease-in-out 100ms;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #1c2b62;
+}
