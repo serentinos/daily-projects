@@ -1,5 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+:root {
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #eef2f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+  color: #191847;
+
+  padding: 12px;
+}
+
+.component {
+  background-color: #fff;
+  padding: 82px;
+  display: flex;
+  border-radius: 18px;
+
+  max-width: 887px;
+}
+
+.component__info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.free-shipping {
+  display: inline-block;
+  background-color: #191847;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.component__price-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.component__prev-prise {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-decoration: line-through;
+}
+
+.component__price {
+  font-size: 48px;
+  font-weight: 700;
+
+  line-height: 72px;
+}
+
+.component__price-details {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+.btn {
+  /* display: block; */
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 16px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+}
+
+.add-to-cart {
+  color: white;
+  background-color: #4788e9;
+
+  box-shadow: 0px 7px 0px #1c57ee;
+}
+
+.component__amount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.component__amount span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  background-color: #00d98b;
+}
+
+.component__additional-btns {
+  display: flex;
+  gap: 16px;
+}
+
+.additional-btn {
+  border: 2px solid #c9c9da;
+}
+
+@media (max-width: 768px) {
+  .component {
+    padding: 24px;
+    flex-direction: column;
+  }
+
+  .component__img {
+    align-self: center;
+    flex-grow: 1;
+    min-width: 70%;
+  }
+  .component__img img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
 }
