@@ -16,7 +16,9 @@ body {
   align-items: center;
   justify-content: center;
 
-  height: 100vh;
+  min-height: 100vh;
+
+  padding: 10px;
 
   color: #13143c;
 }
@@ -25,11 +27,11 @@ body {
   background-color: #fffaf2;
 
   max-width: 1050px;
+  gap: 50px;
 
   padding: 42px;
   border-radius: 29px;
   display: flex;
-  gap: 249px;
   justify-content: space-around;
 }
 
@@ -37,7 +39,8 @@ body {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  max-width: 311px;
+  /* max-width: 311px; */
+  flex-basis: 311px;
 }
 
 .component__about-info :not(:last-child) {
@@ -102,7 +105,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 96px;
-  width: 414px;
+  /* width: 414px; */
+
+  flex-basis: 414px;
 
   justify-content: flex-end;
 }
@@ -130,4 +135,19 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .component {
+    flex-direction: column;
+  }
+  .component__about {
+    flex-basis: auto;
+  }
+  .component__action {
+    flex-basis: auto;
+  }
+  .components__about-links {
+    justify-content: space-between;
+  }
 }
