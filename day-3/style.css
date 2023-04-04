@@ -1,0 +1,133 @@
+/* troubles with components__about-links */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #dfdfdf;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  color: #13143c;
+}
+
+.component {
+  background-color: #fffaf2;
+
+  max-width: 1050px;
+
+  padding: 42px;
+  border-radius: 29px;
+  display: flex;
+  gap: 249px;
+  justify-content: space-around;
+}
+
+.component__about {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  max-width: 311px;
+}
+
+.component__about-info :not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.component__about-nick {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.component__progress-panel {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+  align-items: center;
+  row-gap: 8px;
+}
+
+.info-ico {
+  justify-self: end;
+}
+
+.component__porgress-bar {
+  height: 13px;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  grid-column: 1 / -1;
+  position: relative;
+}
+
+.progress-bar__amount {
+  width: 75%;
+  background-color: #f17a37;
+  height: 13px;
+  border-radius: 10px;
+  display: inline-block;
+  position: absolute;
+}
+
+.components__about-links {
+  display: flex;
+  gap: 16px;
+}
+
+.ico {
+  padding: 16px;
+
+  background-color: white;
+  border-radius: 19px;
+  border: 1px #dfdfdf solid;
+}
+
+.link {
+  padding: 0;
+  border-radius: 19px;
+  text-decoration: none;
+  display: flex;
+  /* border: 1px solid black; */
+}
+
+.component__action {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+  width: 414px;
+
+  justify-content: flex-end;
+}
+
+.components__follow {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.followers-amount {
+  font-weight: 700;
+}
+
+.btn {
+  background-color: #13143c;
+  width: 191px;
+  padding: 19px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+}
