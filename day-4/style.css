@@ -1,4 +1,8 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Poppins:wght@400;500&display=swap");
+
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,4 +11,127 @@
 body {
   background-color: #f7f7fa;
   min-height: 100vh;
+  font-family: Poppins, sans-serif;
+
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #10153e;
 }
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: Merriweather, serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.component {
+  background-color: #fff;
+  padding: 53px;
+  border-radius: 53px;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 628px;
+  gap: 32px;
+}
+
+.coponent__order-info {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 25px;
+  background-color: #f7f7fa;
+  border: 1px solid #e3e5f1;
+  border-radius: 16px;
+}
+
+.component__parameter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.component__parameter-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.component__parameter-name span {
+  font-weight: 500;
+  color: #60679f;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.component__parameter-value {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.history-status-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 32px;
+}
+
+.history-status-item p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.history-status-item::before {
+  content: "";
+  position: absolute;
+  height: calc(100% + 20px);
+  left: 9px;
+  top: 2px;
+  width: 1px;
+  background-color: #60679f;
+  opacity: 0.6;
+}
+
+.history-status-item::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border: 1px solid #60679f;
+  border-radius: 50%;
+}
+
+.history-status-item:first-child::after {
+  border: 4px solid #60679f;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .coponent__order-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .component {
+    padding: 24px;
+    border-radius: 0;
+    min-width: 100%;
+  }
+} ;
