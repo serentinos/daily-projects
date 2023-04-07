@@ -21,28 +21,38 @@ h3 {
   font-family: "Merriweather", serif;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 .fw-400 {
   font-weight: 400;
 }
 
 .form-component {
   display: flex;
-  /* justify-content: center; */
+  max-width: 1600px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 547px;
+  margin: 0 0 0 auto;
 }
 
 .form-section {
   background-color: #23252f;
-  flex: 0 1 auto;
-  max-width: 930px;
-  display: flex;
-  align-items: flex-end;
-}
-.details-section {
-  flex: 0 1 auto;
+  width: 60%;
+  padding: 20px 90px;
 }
 
-.container {
-  margin-left: auto;
-  width: 930px;
-  align-self: flex-end;
+.details-section {
+  width: 40%;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
